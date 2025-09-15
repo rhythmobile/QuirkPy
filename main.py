@@ -91,7 +91,7 @@ def hello_chaotic():
 def contribution_welcome():
     """Print a welcome message for potential contributors"""
     welcome_messages = [
-        "🎨 Welcome to ChaosPy! Your creativity is welcome here!",
+        "🎨 Welcome to QuirkPy Your creativity is welcome here!",
         "🚀 Ready to add some chaos? Fork and contribute anything!",
         "🌟 This project grows through community magic - add your touch!",
         "🤝 All contributions welcome: features, fixes, jokes, or nonsense!",
