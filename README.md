@@ -10,6 +10,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/Ratul345/QuirkPy?color=green)
 ![Python](https://img.shields.io/badge/python-3.6+-blue.svg)
 ![AI/ML](https://img.shields.io/badge/AI%2FML-Bangla%20Chaos%20Engine-orange.svg)
+![Made in Bangladesh](https://img.shields.io/badge/Made%20in-Bangladesh%20🇧🇩-red.svg)
 
 > **⚡ Try our new Bangla Chaos Engine: `python -c "from ml_modules.chaos_engine import test_bangla_chaos; test_bangla_chaos()"`**
 

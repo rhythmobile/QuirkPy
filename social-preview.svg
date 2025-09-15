@@ -1,0 +1,196 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="QuirkPy social preview banner">
+  <defs>
+    <!-- Modern gradient background -->
+    <linearGradient id="modernBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="50%" stop-color="#161B22"/>
+      <stop offset="100%" stop-color="#21262D"/>
+    </linearGradient>
+
+    <!-- Electric gradient for Q -->
+    <linearGradient id="qGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="50%" stop-color="#4AE54A"/>
+      <stop offset="100%" stop-color="#FFE066"/>
+    </linearGradient>
+
+    <!-- Text gradient -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#E6EDF3"/>
+      <stop offset="100%" stop-color="#7C8DB0"/>
+    </linearGradient>
+
+    <!-- Accent gradient -->
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B9D"/>
+      <stop offset="100%" stop-color="#C77DFF"/>
+    </linearGradient>
+
+    <!-- Glow effects -->
+    <filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="textGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Noise texture -->
+    <filter id="noise">
+      <feTurbulence baseFrequency="0.5" numOctaves="4" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="monoNoise"/>
+      <feBlend in="SourceGraphic" in2="monoNoise" mode="multiply" opacity="0.05"/>
+    </filter>
+
+    <!-- Drop shadow -->
+    <filter id="dropShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="640" fill="url(#modernBg)" filter="url(#noise)"/>
+
+  <!-- Abstract geometric shapes -->
+  <g opacity="0.1">
+    <circle cx="1100" cy="100" r="200" fill="url(#qGradient)"/>
+    <circle cx="200" cy="500" r="150" fill="url(#accentGradient)"/>
+    <polygon points="800,50 900,150 800,250 700,150" fill="#00D4FF"/>
+  </g>
+
+  <!-- Dynamic grid pattern -->
+  <g opacity="0.08" stroke="#00D4FF" stroke-width="1">
+    <defs>
+      <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+        <path d="M 60 0 L 0 0 0 60" fill="none"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+  </g>
+
+  <!-- Floating particles -->
+  <g opacity="0.6">
+    <circle cx="300" cy="120" r="3" fill="#00D4FF">
+      <animate attributeName="cy" values="120;110;120" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="400" r="2" fill="#4AE54A">
+      <animate attributeName="cx" values="800;810;800" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1000" cy="200" r="4" fill="#FFE066">
+      <animate attributeName="cy" values="200;195;200" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Main Q logo - modernized -->
+  <g transform="translate(120,200)">
+    <!-- Outer ring -->
+    <circle cx="0" cy="0" r="80" fill="none" stroke="url(#qGradient)" stroke-width="8" opacity="0.3"/>
+    <!-- Main circle -->
+    <circle cx="0" cy="0" r="60" fill="url(#qGradient)" filter="url(#strongGlow)"/>
+    <!-- Inner hole -->
+    <circle cx="0" cy="0" r="35" fill="#0D1117"/>
+    <!-- Q letter -->
+    <text x="0" y="15" text-anchor="middle" font-family="Inter, sans-serif" font-size="50" font-weight="900" fill="#FFFFFF">Q</text>
+    <!-- Q tail -->
+    <path d="M25,25 Q35,35 50,40" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Main title with modern styling -->
+  <g transform="translate(280,180)">
+    <text x="0" y="0" font-family="Inter, sans-serif" font-size="88" font-weight="900" fill="url(#textGradient)" filter="url(#textGlow)">
+      QuirkPy
+    </text>
+    
+    <!-- Glitch effect layers -->
+    <text x="3" y="-2" font-family="Inter, sans-serif" font-size="88" font-weight="900" fill="#FF6B9D" opacity="0.4">
+      QuirkPy
+    </text>
+    <text x="-2" y="1" font-family="Inter, sans-serif" font-size="88" font-weight="900" fill="#00D4FF" opacity="0.3">
+      QuirkPy
+    </text>
+  </g>
+
+  <!-- Modern subtitle -->
+  <g transform="translate(280,260)">
+    <text x="0" y="0" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#7C8DB0">
+      From Chaos to AI Lab — 
+    </text>
+    <text x="260" y="0" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="url(#qGradient)">
+      Bangla-focused, community-driven
+    </text>
+  </g>
+
+  <!-- Feature badges -->
+  <g transform="translate(280,320)">
+    <!-- AI badge -->
+    <rect x="0" y="0" width="80" height="40" rx="20" fill="url(#qGradient)" filter="url(#dropShadow)"/>
+    <text x="40" y="27" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#0D1117">🧠 AI</text>
+    
+    <!-- Bangla badge -->
+    <rect x="100" y="0" width="100" height="40" rx="20" fill="url(#accentGradient)" filter="url(#dropShadow)"/>
+    <text x="150" y="27" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">বাংলা</text>
+    
+    <!-- Open Source badge -->
+    <rect x="220" y="0" width="130" height="40" rx="20" fill="#21262D" stroke="url(#qGradient)" stroke-width="2"/>
+    <text x="285" y="27" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="url(#qGradient)">Open Source</text>
+  </g>
+
+  <!-- Code snippet box -->
+  <g transform="translate(280,420)">
+    <rect x="0" y="0" width="600" height="120" rx="12" fill="#21262D" stroke="#30363D" stroke-width="1" filter="url(#dropShadow)"/>
+    
+    <!-- Terminal header -->
+    <rect x="0" y="0" width="600" height="35" rx="12" fill="#30363D"/>
+    <circle cx="20" cy="17.5" r="5" fill="#FF5F56"/>
+    <circle cx="40" cy="17.5" r="5" fill="#FFBD2E"/>
+    <circle cx="60" cy="17.5" r="5" fill="#27CA3F"/>
+    
+    <text x="20" y="60" font-family="JetBrains Mono, monospace" font-size="14" fill="#7C8DB0">$</text>
+    <text x="40" y="60" font-family="JetBrains Mono, monospace" font-size="14" fill="#E6EDF3">python -c</text>
+    <text x="20" y="85" font-family="JetBrains Mono, monospace" font-size="14" fill="#4AE54A">"from ml_modules.chaos_engine import test_bangla_chaos;</text>
+    <text x="20" y="105" font-family="JetBrains Mono, monospace" font-size="14" fill="#4AE54A"> test_bangla_chaos()"</text>
+  </g>
+
+  <!-- GitHub button -->
+  <g transform="translate(920,450)">
+    <rect x="0" y="0" width="120" height="50" rx="25" fill="url(#qGradient)" filter="url(#dropShadow)"/>
+    <text x="60" y="32" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#0D1117">GitHub →</text>
+  </g>
+
+  <!-- Bangladesh flag and text -->
+  <g transform="translate(1080,550)">
+    <rect x="-90" y="-35" width="180" height="70" rx="35" fill="#006A4E"/>
+    <circle cx="0" cy="0" r="15" fill="#F42A41"/>
+    <text x="0" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Made in Bangladesh 🇧🇩</text>
+  </g>
+
+  <!-- Dynamic lines -->
+  <g opacity="0.15" stroke="url(#qGradient)" stroke-width="2" fill="none">
+    <path d="M 200 350 Q 500 300 800 350">
+      <animate attributeName="d" values="M 200 350 Q 500 300 800 350;M 200 350 Q 500 320 800 350;M 200 350 Q 500 300 800 350" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 300 500 Q 600 450 900 500">
+      <animate attributeName="d" values="M 300 500 Q 600 450 900 500;M 300 500 Q 600 470 900 500;M 300 500 Q 600 450 900 500" dur="8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Bottom tagline -->
+  <text x="40" y="610" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#7C8DB0">
+    QuirkPy — Empowering Bengali AI researchers and developers worldwide
+  </text>
+
+  <!-- Version indicator -->
+  <g transform="translate(1150,80)">
+    <rect x="0" y="0" width="60" height="25" rx="12" fill="#30363D"/>
+    <text x="30" y="17" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#4AE54A">v2.0</text>
+  </g>
+</svg>
