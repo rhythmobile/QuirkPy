@@ -113,13 +113,19 @@ def main():
 
 
 # CONTRIBUTION ZONE 🎯
-# Add your functions here! Some ideas:
-# - def hello_morse_code(): return ".... . .-.. .-.. --- / .-- --- .-. .-.. -.."
-# - def hello_dancing_text(): return animated_text("Hello World!")
-# - def hello_dad_joke(): return "Hello World? More like Jello Swirled!"
-# - def hello_in_language(language): return translations[language]
-# - def hello_with_weather(): return f"Hello World! Today's chaos: {random_weather()}"
-# Go wild! No idea is too silly or too awesome!
+# 
+# BEFORE YOU ADD: Read CONTRIBUTING.md for guidelines!
+# 
+# ✅ GOOD CONTRIBUTIONS:
+# - def hello_bangla_rap(): return "বাংলা র‍্যাপে হ্যালো!"
+# - def hello_with_time(): return f"Hello World! It's {datetime.now().strftime('%H:%M')}"
+# - def hello_story(): return "Once upon a time... Hello World!"
+# 
+# ❌ AVOID:
+# - def hello_basic(): return "Hello World"  # Too simple!
+# - def hello_copy(): return existing_function()  # Duplicate!
+# 
+# Make it UNIQUE, CREATIVE, and add VALUE!
 
 
 if __name__ == "__main__":
