@@ -102,28 +102,81 @@ def contribution_welcome():
 
 def main():
     """Main function that runs the show"""
+    import sys
+    
+    # Check for AI demo flag
+    if "--ai-demo" in sys.argv:
+        showcase_all_features()
+        return
+    
+    # Classic chaos mode
     print("=" * 60)
     print(hello_chaotic())
     print("\n" + contribution_welcome())
     print("=" * 60)
+    
+    # Show AI integration hint
+    if random.random() < 0.3:  # 30% chance
+        print("\n🧠 NEW: Try --ai-demo flag for AI features! 🧠")
     
     # Fun easter egg for contributors
     if random.random() < 0.15:  # 15% chance
         print("\n🥚 EASTER EGG! Add your own chaos below this line! 🥚")
 
 
-# AI/ML EVOLUTION ZONE 🧠
+def hello_bangla_ai():
+    """New AI-powered Bangla greeting generator"""
+    try:
+        from ml_modules.chaos_engine import BanglaChaosGenerator
+        generator = BanglaChaosGenerator()
+        meme = generator.generate_meme_text("welcome")
+        return f"🇧🇩 {meme['top']} {meme['bottom']}"
+    except ImportError:
+        return "🧠 Install AI features: pip install -r requirements.txt"
+
+def showcase_all_features():
+    """Show both classic chaos and new AI features"""
+    print("\n🎪 QUIRKPY FEATURE SHOWCASE 🎪")
+    print("=" * 50)
+    
+    # Classic chaos
+    print("1️⃣ Classic Chaos:")
+    print(hello_chaotic())
+    
+    # New AI features
+    print("\n2️⃣ AI/ML Evolution:")
+    print(hello_bangla_ai())
+    
+    # Quick demo
+    print("\n3️⃣ Quick AI Demo:")
+    try:
+        from ml_modules.chaos_engine import test_bangla_chaos
+        print("✅ Bangla Chaos Engine: Ready!")
+        print("   Run: python ml_modules/chaos_engine.py")
+    except ImportError:
+        print("⚠️  Install dependencies first: pip install -r requirements.txt")
+
+# AI/ML EVOLUTION ZONE 🧠🇧🇩
 #
-# QuirkPy is evolving! Check out our new ML modules:
-# from ml_modules.chaos_engine import BanglaChaosGenerator
+# 🆕 QUIRKPY 2.0 - NOW WITH AI!
 #
-# ✅ NEXT LEVEL CONTRIBUTIONS:
-# - Add Bangla text datasets to chaos_engine.py
-# - Create new ML modules in ml_modules/
-# - Build chaos-based data augmentation tools
-# - Train Bangla meme generation models
+# 🎯 NEW COMMANDS:
+#   python main.py --ai-demo      # Full AI showcase
+#   python ml_modules/chaos_engine.py  # Bangla text generation
+#   python -c "from ml_modules.chaos_engine import test_bangla_chaos; test_bangla_chaos()"
 #
-# Start with: python -c "from ml_modules.chaos_engine import test_bangla_chaos; test_bangla_chaos()"
+# 🌏 BANGLADESH AI REVOLUTION:
+#   ✅ Generate Bangla text datasets
+#   ✅ Create AI-powered memes
+#   ✅ Build ML models for Bangla language
+#   ✅ Community-driven AI research
+#
+# 🤝 CONTRIBUTION PATHS:
+#   1. Add Bangla words to chaos_engine.py
+#   2. Create new ML modules in ml_modules/
+#   3. Build Bangla NLP tools
+#   4. Share datasets with community
+#   5. Train meme generation models
 
 
 if __name__ == "__main__":
