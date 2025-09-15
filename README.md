@@ -1,22 +1,22 @@
 <div align="center">
-  <img src="logo.svg" alt="ChaosPy Logo" width="200" height="200"/>
+  <img src="logo.svg" alt="QuirkPy Logo" width="200" height="200"/>
   
-  # ChaosPy - A Community-Driven Python Experiment# ChaosPy 🌀
+  # QuirkPy - A Community-Driven Python Experiment# QuirkPy 🌀
 
-![GitHub stars](https://img.shields.io/github/stars/Ratul345/ChaosPy?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Ratul345/ChaosPy?style=social)
-![GitHub issues](https://img.shields.io/github/issues/Ratul345/ChaosPy?color=red)
-![GitHub contributors](https://img.shields.io/github/contributors/Ratul345/ChaosPy?color=green)
+![GitHub stars](https://img.shields.io/github/stars/Ratul345/QuirkPy?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Ratul345/QuirkPy?style=social)
+![GitHub issues](https://img.shields.io/github/issues/Ratul345/QuirkPy?color=red)
+![GitHub contributors](https://img.shields.io/github/contributors/Ratul345/QuirkPy?color=green)
 
 > **⚡ Try `python main.py` right now and see what happens—it's different every time!**
 
 > *Where creativity meets chaos, and every contribution makes the world more interesting*
 
-Welcome to ChaosPy! This isn't your typical Python project - it's a living, breathing experiment in community creativity. What started as a simple "Hello, World" program has evolved into a playground where **anything goes** and **everyone is welcome**.
+Welcome to QuirkPy! This isn't your typical Python project - it's a living, breathing experiment in community creativity. What started as a simple "Hello, World" program has evolved into a playground where **anything goes** and **everyone is welcome**.
 
 ## About 🎨
 
-ChaosPy is exactly what it sounds like: **controlled chaos**. This project has no fixed direction, no rigid roadmap, and no limits on imagination. It's a space where:
+QuirkPy is exactly what it sounds like: **controlled chaos**. This project has no fixed direction, no rigid roadmap, and no limits on imagination. It's a space where:
 
 - 🎭 **Beginners** can experiment without fear
 - 🧙‍♂️ **Veterans** can showcase their quirkiest ideas  
@@ -100,14 +100,14 @@ def hello_in_language(language="english"):
 
 ### Quick Start
 ```bash
-git clone https://github.com/Ratul345/ChaosPy.git
-cd ChaosPy
+git clone https://github.com/Ratul345/QuirkPy.git
+cd QuirkPy
 python main.py
 ```
 
 ### 🎯 Ready to Contribute?
-- **Find bugs?** [Open an Issue](https://github.com/Ratul345/ChaosPy/issues)
-- **Have ideas?** [Start a Discussion](https://github.com/Ratul345/ChaosPy/discussions)
+- **Find bugs?** [Open an Issue](https://github.com/Ratul345/QuirkPy/issues)
+- **Have ideas?** [Start a Discussion](https://github.com/Ratul345/QuirkPy/discussions)
 - **Want to code?** Check out our [Ideas & Contributions](#-ideas--contributions) section below
 
 ### Development Setup
@@ -130,14 +130,14 @@ python main.py
 - **Test it** (run it a few times - chaos should be unpredictable!)
 - **Create a pull request** describing your beautiful chaos
 
-**The beauty of ChaosPy is that ANYTHING GOES!** 🎉
+**The beauty of QuirkPy is that ANYTHING GOES!** 🎉
 
 ## Community & Support 🤝
 
-🔗 **GitHub Repository**: [Ratul345/ChaosPy](https://github.com/Ratul345/ChaosPy)
+🔗 **GitHub Repository**: [Ratul345/QuirkPy](https://github.com/Ratul345/QuirkPy)
 
-Issues: Found a bug? Want to suggest something? [Open an issue!](https://github.com/Ratul345/ChaosPy/issues)
-Discussions: Share ideas, ask questions, or just chat about chaos [here](https://github.com/Ratul345/ChaosPy/discussions)
+Issues: Found a bug? Want to suggest something? [Open an issue!](https://github.com/Ratul345/QuirkPy/issues)
+Discussions: Share ideas, ask questions, or just chat about chaos [here](https://github.com/Ratul345/QuirkPy/discussions)
 Pull Requests: All PRs welcome - we don't bite (unless you're into that)
 
 ## License 📄
@@ -146,9 +146,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Final Words 🎊
 
-Remember: **There are no mistakes in ChaosPy, only unexpected features.**
+Remember: **There are no mistakes in QuirkPy, only unexpected features.**
 
-Whether you're adding your first line of Python or your thousandth, whether your contribution is elegant code or complete nonsense, you're part of the ChaosPy family now.
+Whether you're adding your first line of Python or your thousandth, whether your contribution is elegant code or complete nonsense, you're part of the QuirkPy family now.
 
 So go ahead - **fork it, break it, build it, beautify it**. The chaos awaits, and it's more fun with you in it! 🌟
 

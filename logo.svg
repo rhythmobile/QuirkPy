@@ -1,122 +1,165 @@
 <svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Modern gradient -->
-    <linearGradient id="modernGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#667eea"/>
-      <stop offset="50%" style="stop-color:#764ba2"/>
-      <stop offset="100%" style="stop-color:#f093fb"/>
+    <!-- Electric gradient -->
+    <linearGradient id="electric" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88"/>
+      <stop offset="50%" style="stop-color:#00ccff"/>
+      <stop offset="100%" style="stop-color:#6600ff"/>
     </linearGradient>
     
-    <!-- Accent gradient -->
-    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#4facfe"/>
-      <stop offset="100%" style="stop-color:#00f2fe"/>
+    <!-- Dark gradient -->
+    <linearGradient id="dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a"/>
+      <stop offset="100%" style="stop-color:#333333"/>
     </linearGradient>
     
-    <!-- Glow filter -->
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge> 
+    <!-- Neon glow -->
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
     
-    <!-- Drop shadow -->
-    <filter id="shadow">
-      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3"/>
+    <!-- Strong shadow -->
+    <filter id="strongShadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.4"/>
     </filter>
   </defs>
   
-  <!-- Background circle with gradient -->
-  <circle cx="150" cy="150" r="130" fill="url(#modernGradient)" opacity="0.1"/>
+  <!-- Dark background circle -->
+  <circle cx="150" cy="150" r="140" fill="url(#dark)" stroke="url(#electric)" stroke-width="3" opacity="0.9"/>
   
-  <!-- Geometric Python snake -->
-  <g filter="url(#shadow)">
-    <path d="M 60 150 Q 90 90, 150 110 Q 210 90, 240 150 Q 210 210, 150 190 Q 90 210, 60 150 Z" 
-          fill="url(#modernGradient)" 
-          opacity="0.8"/>
-    
-    <!-- Snake segments with geometric style -->
-    <circle cx="150" cy="110" r="18" fill="url(#accentGradient)" opacity="0.9"/>
-    <circle cx="240" cy="150" r="18" fill="url(#accentGradient)" opacity="0.9"/>
-    <circle cx="150" cy="190" r="18" fill="url(#accentGradient)" opacity="0.9"/>
-    <circle cx="60" cy="150" r="18" fill="url(#accentGradient)" opacity="0.9"/>
-    
-    <!-- Snake head -->
-    <circle cx="240" cy="150" r="22" fill="#1a1a2e"/>
-    <circle cx="246" cy="144" r="4" fill="#16aaff"/>
-    <circle cx="246" cy="156" r="2" fill="#ff6b9d"/>
-  </g>
-  
-  <!-- Modern code elements -->
-  <g font-family="SF Mono, Monaco, monospace" fill="#1a1a2e" opacity="0.7">
-    <!-- Python-style syntax -->
-    <text x="90" y="80" font-size="16" transform="rotate(-10 90 80)">def</text>
-    <text x="180" y="70" font-size="14" transform="rotate(15 180 70)">chaos()</text>
-    <text x="220" y="220" font-size="16" transform="rotate(20 220 220)">:</text>
-    <text x="80" y="230" font-size="14" transform="rotate(-15 80 230)">return</text>
-  </g>
-  
-  <!-- Floating geometric shapes -->
-  <g opacity="0.6">
-    <polygon points="50,60 60,40 70,60" fill="#ff6b9d">
+  <!-- Main python body - abstract geometric -->
+  <g filter="url(#strongShadow)">
+    <!-- Central hexagon -->
+    <polygon points="150,80 190,110 190,150 150,180 110,150 110,110" 
+             fill="url(#electric)" 
+             opacity="0.8"
+             stroke="#ffffff" 
+             stroke-width="2">
       <animateTransform attributeName="transform" type="rotate" 
-                        values="0 60 50; 360 60 50" dur="8s" repeatCount="indefinite"/>
+                        values="0 150 130; 360 150 130" dur="20s" repeatCount="indefinite"/>
     </polygon>
     
-    <rect x="235" y="45" width="12" height="12" fill="#16aaff" rx="2">
-      <animateTransform attributeName="transform" type="rotate" 
-                        values="0 241 51; -360 241 51" dur="6s" repeatCount="indefinite"/>
-    </rect>
-    
-    <circle cx="45" cy="245" r="6" fill="#4facfe">
-      <animate attributeName="r" values="6;8;6" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    
-    <polygon points="250,235 260,245 250,255 240,245" fill="#764ba2">
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" repeatCount="indefinite"/>
-    </polygon>
+    <!-- Snake segments as connected diamonds -->
+    <g transform="rotate(30 150 150)">
+      <polygon points="150,50 170,70 150,90 130,70" fill="#00ff88" opacity="0.9"/>
+      <polygon points="200,100 220,120 200,140 180,120" fill="#00ccff" opacity="0.9"/>
+      <polygon points="200,200 220,220 200,240 180,220" fill="#6600ff" opacity="0.9"/>
+      <polygon points="100,200 120,220 100,240 80,220" fill="#00ff88" opacity="0.9"/>
+      <polygon points="50,150 70,170 50,190 30,170" fill="#00ccff" opacity="0.9"/>
+      <polygon points="100,100 120,120 100,140 80,120" fill="#6600ff" opacity="0.9"/>
+    </g>
   </g>
   
-  <!-- Central chaos symbol - modernized -->
-  <g text-anchor="middle" filter="url(#glow)">
-    <text x="150" y="170" font-family="SF Mono, Monaco, monospace" 
-          font-size="36" font-weight="bold" fill="url(#accentGradient)">
-      ∞
+  <!-- Code fragments in circuit style -->
+  <g font-family="JetBrains Mono, monospace" font-weight="bold" filter="url(#neonGlow)">
+    <text x="60" y="60" font-size="12" fill="#00ff88" opacity="0.8">
+      import chaos
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="3s" repeatCount="indefinite"/>
+    </text>
+    
+    <text x="180" y="50" font-size="10" fill="#00ccff" transform="rotate(45 180 50)">
+      while True:
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+    </text>
+    
+    <text x="40" y="250" font-size="11" fill="#6600ff">
+      sys.exit(0)
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="5s" repeatCount="indefinite"/>
+    </text>
+    
+    <text x="200" y="260" font-size="10" fill="#00ff88" transform="rotate(-30 200 260)">
+      except:
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.5s" repeatCount="indefinite"/>
     </text>
   </g>
   
-  <!-- Subtle grid pattern -->
-  <g stroke="url(#modernGradient)" stroke-width="0.5" opacity="0.2">
-    <defs>
-      <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="currentColor" stroke-width="0.5"/>
-      </pattern>
-    </defs>
-    <rect width="100%" height="100%" fill="url(#grid)"/>
+  <!-- Central chaos symbol - stylized C -->
+  <g text-anchor="middle" filter="url(#neonGlow)">
+    <text x="150" y="140" font-family="Arial Black, sans-serif" 
+          font-size="60" font-weight="900" fill="url(#electric)" 
+          stroke="#ffffff" stroke-width="1">
+      C
+    </text>
+    <text x="150" y="180" font-family="JetBrains Mono, monospace" 
+          font-size="14" fill="#ffffff" opacity="0.8">
+      CHAOS
+    </text>
   </g>
   
-  <!-- Energy particles -->
-  <g opacity="0.8">
-    <circle cx="100" cy="100" r="2" fill="#16aaff">
-      <animate attributeName="cy" values="100;105;100" dur="2.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.5s" repeatCount="indefinite"/>
+  <!-- Orbital rings -->
+  <g stroke="url(#electric)" stroke-width="2" fill="none" opacity="0.6">
+    <circle cx="150" cy="150" r="100">
+      <animate attributeName="stroke-dasharray" values="0,628;314,314;628,0" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <ellipse cx="150" cy="150" rx="120" ry="60" transform="rotate(45 150 150)">
+      <animate attributeName="stroke-dasharray" values="628,0;314,314;0,628" dur="8s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+  
+  <!-- Energy nodes -->
+  <g>
+    <circle cx="250" cy="150" r="6" fill="#00ff88">
+      <animate attributeName="r" values="6;12;6" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
     </circle>
     
-    <circle cx="200" cy="200" r="2" fill="#ff6b9d">
-      <animate attributeName="cx" values="200;195;200" dur="3s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="3s" repeatCount="indefinite"/>
+    <circle cx="50" cy="150" r="6" fill="#00ccff">
+      <animate attributeName="r" values="6;12;6" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/>
     </circle>
     
-    <circle cx="80" cy="200" r="2" fill="#4facfe">
-      <animate attributeName="cy" values="200;195;200" dur="2.8s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.8s" repeatCount="indefinite"/>
+    <circle cx="150" cy="50" r="6" fill="#6600ff">
+      <animate attributeName="r" values="6;12;6" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite"/>
     </circle>
     
-    <circle cx="220" cy="100" r="2" fill="#764ba2">
-      <animate attributeName="cx" values="220;225;220" dur="2.2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.2s" repeatCount="indefinite"/>
+    <circle cx="150" cy="250" r="6" fill="#00ff88">
+      <animate attributeName="r" values="6;12;6" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.2s" repeatCount="indefinite"/>
     </circle>
   </g>
+  
+  <!-- Lightning bolts -->
+  <g stroke="#ffffff" stroke-width="3" fill="none" opacity="0.7" filter="url(#neonGlow)">
+    <path d="M 80 80 L 90 95 L 85 100 L 95 115">
+      <animate attributeName="opacity" values="0;1;0" dur="0.3s" begin="0s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M 220 220 L 210 205 L 215 200 L 205 185">
+      <animate attributeName="opacity" values="0;1;0" dur="0.4s" begin="1s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M 220 80 L 210 95 L 215 100 L 205 115">
+      <animate attributeName="opacity" values="0;1;0" dur="0.35s" begin="2s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M 80 220 L 90 205 L 85 200 L 95 185">
+      <animate attributeName="opacity" values="0;1;0" dur="0.25s" begin="0.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Particle system -->
+  <g opacity="0.8">
+    <circle cx="120" cy="90" r="1" fill="#00ff88">
+      <animateMotion dur="4s" repeatCount="indefinite">
+        <mpath href="#orbit1"/>
+      </animateMotion>
+    </circle>
+    
+    <circle cx="180" cy="210" r="1" fill="#00ccff">
+      <animateMotion dur="5s" repeatCount="indefinite">
+        <mpath href="#orbit2"/>
+      </animateMotion>
+    </circle>
+  </g>
+  
+  <!-- Hidden paths for particle motion -->
+  <defs>
+    <path id="orbit1" d="M 120,90 A 30,30 0 1,1 119,90"/>
+    <path id="orbit2" d="M 180,210 A 25,25 0 1,0 179,210"/>
+  </defs>
 </svg>

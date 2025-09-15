@@ -1,4 +1,4 @@
-# Contributing to ChaosPy 🌀
+# Contributing to QuirkPy 🌀
 
 Welcome to the chaos! This guide will help you contribute to the most unpredictable Python project on GitHub.
 
@@ -7,8 +7,8 @@ Welcome to the chaos! This guide will help you contribute to the most unpredicta
 1. **Fork the repo** on GitHub
 2. **Clone your fork**:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/ChaosPy.git
-   cd ChaosPy
+   git clone https://github.com/YOUR_USERNAME/QuirkPy.git
+   cd QuirkPy
    ```
 3. **Create a branch** for your chaos:
    ```bash
@@ -138,8 +138,8 @@ Contributors will be:
 
 ## 🚨 Emergency Contacts
 
-- **Issues:** [GitHub Issues](https://github.com/Ratul345/ChaosPy/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/Ratul345/ChaosPy/discussions)
+- **Issues:** [GitHub Issues](https://github.com/Ratul345/QuirkPy/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/Ratul345/QuirkPy/discussions)
 - **General chaos:** Just open an issue and embrace the chaos!
 
 ---

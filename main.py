@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-ChaosPy - A Community-Driven Python Experiment 🌀
+QuirkPy - A Community-Driven Python Experiment 🌀
 
 This is your canvas for chaos! Add anything you want:
 - New greeting styles
