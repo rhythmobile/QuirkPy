@@ -18,7 +18,7 @@
 
 > *The chaos playground that grew into Bangladesh's first open-source AI lab*
 
-Welcome to **QuirkPy 2.0** - what started as a fun "Hello World" experiment has evolved into **Bangladesh's first community-driven AI/ML chaos lab**! 🚀
+Welcome to **QuirkPy - Bangladesh's First AI Lab** - what started as a fun "Hello World" experiment has evolved into **Bangladesh's first community-driven AI/ML chaos lab**! 🚀
 
 ## 🆕 What's New (AI/ML Evolution)
 
