@@ -112,20 +112,18 @@ def main():
         print("\n🥚 EASTER EGG! Add your own chaos below this line! 🥚")
 
 
-# CONTRIBUTION ZONE 🎯
-# 
-# BEFORE YOU ADD: Read CONTRIBUTING.md for guidelines!
-# 
-# ✅ GOOD CONTRIBUTIONS:
-# - def hello_bangla_rap(): return "বাংলা র‍্যাপে হ্যালো!"
-# - def hello_with_time(): return f"Hello World! It's {datetime.now().strftime('%H:%M')}"
-# - def hello_story(): return "Once upon a time... Hello World!"
-# 
-# ❌ AVOID:
-# - def hello_basic(): return "Hello World"  # Too simple!
-# - def hello_copy(): return existing_function()  # Duplicate!
-# 
-# Make it UNIQUE, CREATIVE, and add VALUE!
+# AI/ML EVOLUTION ZONE 🧠
+#
+# QuirkPy is evolving! Check out our new ML modules:
+# from ml_modules.chaos_engine import BanglaChaosGenerator
+#
+# ✅ NEXT LEVEL CONTRIBUTIONS:
+# - Add Bangla text datasets to chaos_engine.py
+# - Create new ML modules in ml_modules/
+# - Build chaos-based data augmentation tools
+# - Train Bangla meme generation models
+#
+# Start with: python -c "from ml_modules.chaos_engine import test_bangla_chaos; test_bangla_chaos()"
 
 
 if __name__ == "__main__":
