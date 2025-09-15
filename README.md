@@ -1,4 +1,6 @@
 <div align="center">
+  <img src="social-preview.svg" alt="QuirkPy - Bangladesh's First AI Lab" width="1280" height="640"/>
+  
   <img src="logo.svg" alt="QuirkPy Logo" width="200" height="200"/>
   
   # QuirkPy - From Chaos to AI Lab 🧠➡️🤖
@@ -198,6 +200,31 @@ Just give us credit and share your improvements!
 
 **Choose your destiny:**
 
+```
+
+---
+
+## 🎨 **GitHub Social Preview Setup**
+
+**To set your social preview banner:**
+
+1. **Go to your GitHub repository settings**
+2. **Scroll to "Social preview" section**
+3. **Upload `social-preview.svg`**
+4. **Watch your repository shine!** ✨
+
+The banner will appear when:
+- 🐦 **Shared on Twitter/X**
+- 📘 **Posted on Facebook**
+- 💬 **LinkedIn posts**
+- 📱 **WhatsApp shares**
+- 🔗 **Any social media**
+
+**Banner Features:**
+- 🇧🇩 **Made in Bangladesh** flag prominently displayed
+- 🧠 **AI/ML focus** with modern design
+- 📱 **Optimized for all platforms** (1280x640)
+- 🎨 **Professional branding** for Bangladesh's first AI lab
 1. **🎮 Try it now**: `python -c "from ml_modules.chaos_engine import test_bangla_chaos; test_bangla_chaos()"`
 2. **📚 Learn more**: Read [CONTRIBUTING.md](CONTRIBUTING.md) for AI contribution guide
 3. **🚀 Contribute**: Add your first Bangla word to the corpus
