@@ -96,7 +96,7 @@ def hello_in_language(language="english"):
 
 ```bash
 # Clone the chaos
-git clone https://github.com/[your-username]/ChaosPy.git
+git clone https://github.com/Ratul345/ChaosPy.git
 cd ChaosPy
 
 # Experience the chaos
@@ -145,9 +145,11 @@ python main.py
 
 ## Community & Support 🤝
 
-- **Issues**: Found a bug? Want to suggest something? Open an issue!
-- **Discussions**: Share ideas, ask questions, or just chat about chaos
-- **Pull Requests**: All PRs welcome - we don't bite (unless you're into that)
+🔗 **GitHub Repository**: [Ratul345/ChaosPy](https://github.com/Ratul345/ChaosPy)
+
+Issues: Found a bug? Want to suggest something? [Open an issue!](https://github.com/Ratul345/ChaosPy/issues)
+Discussions: Share ideas, ask questions, or just chat about chaos [here](https://github.com/Ratul345/ChaosPy/discussions)
+Pull Requests: All PRs welcome - we don't bite (unless you're into that)
 
 ## License 📄
 
