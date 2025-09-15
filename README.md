@@ -2,6 +2,7 @@
   <img src="logo.svg" alt="QuirkPy Logo" width="200" height="200"/>
   
   # QuirkPy - From Chaos to AI Lab 🧠➡️🤖
+</div>
 
 ![GitHub stars](https://img.shields.io/github/stars/Ratul345/QuirkPy?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/Ratul345/QuirkPy?style=social)
